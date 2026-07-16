@@ -1,8 +1,10 @@
+const app=document.getElementById('app');
+if(app){app.innerHTML=(window.YH_PART_1||'')+(window.YH_PART_2||'')+(window.YH_PART_3||'');}
+
 const menu=document.querySelector('.menu');
 const openBtn=document.querySelector('.menu-btn');
 const closeBtn=document.querySelector('.menu-close');
 const body=document.body;
-
 const openMenu=()=>{menu?.classList.add('open');body.classList.add('menu-open')};
 const closeMenu=()=>{menu?.classList.remove('open');body.classList.remove('menu-open')};
 openBtn?.addEventListener('click',openMenu);
@@ -28,10 +30,7 @@ const cursor=document.querySelector('.cursor');
 const kinetic=document.querySelector('.kinetic-mark');
 const heroMedia=document.querySelector('.hero-media');
 window.addEventListener('mousemove',e=>{
-  if(cursor){
-    cursor.style.left=e.clientX+'px';
-    cursor.style.top=e.clientY+'px';
-  }
+  if(cursor){cursor.style.left=e.clientX+'px';cursor.style.top=e.clientY+'px';}
   const x=(e.clientX/window.innerWidth-.5);
   const y=(e.clientY/window.innerHeight-.5);
   if(kinetic) kinetic.style.transform=`translate3d(${x*28}px,${y*28}px,0) rotate(${x*7}deg)`;
@@ -48,7 +47,6 @@ window.addEventListener('scroll',()=>{
   const max=document.documentElement.scrollHeight-window.innerHeight;
   const ratio=max>0?window.scrollY/max:0;
   if(progress) progress.style.width=(ratio*100)+'%';
-
   document.querySelectorAll('.project img').forEach(img=>{
     const r=img.getBoundingClientRect();
     const offset=(r.top-window.innerHeight/2)*-.025;
