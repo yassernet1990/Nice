@@ -1,5 +1,5 @@
 const app=document.getElementById('app');
-if(app){app.innerHTML=(window.YH_PART_1||'')+(window.YH_PART_2||'')+(window.YH_PART_3||'');}
+if(app){app.innerHTML=(window.YH_PART_1A||'')+(window.YH_PART_1B||'')+(window.YH_PART_2||'')+(window.YH_PART_3||'');}
 
 const menu=document.querySelector('.menu');
 const openBtn=document.querySelector('.menu-btn');
@@ -28,13 +28,13 @@ document.querySelectorAll('.reveal').forEach(el=>revealObserver.observe(el));
 
 const cursor=document.querySelector('.cursor');
 const kinetic=document.querySelector('.kinetic-mark');
-const heroMedia=document.querySelector('.hero-media');
+const visionArt=document.querySelector('.vision-art');
 window.addEventListener('mousemove',e=>{
   if(cursor){cursor.style.left=e.clientX+'px';cursor.style.top=e.clientY+'px';}
   const x=(e.clientX/window.innerWidth-.5);
   const y=(e.clientY/window.innerHeight-.5);
   if(kinetic) kinetic.style.transform=`translate3d(${x*28}px,${y*28}px,0) rotate(${x*7}deg)`;
-  if(heroMedia) heroMedia.style.transform=`rotate(${-2+x*2}deg) translate3d(${x*-8}px,${y*-8}px,0)`;
+  if(visionArt) visionArt.style.transform=`rotate(${-2+x*1.6}deg) translate3d(${x*-8}px,${y*-8}px,0)`;
 });
 
 document.querySelectorAll('a,button,.project,.article,.chip,.tag').forEach(el=>{
