@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Yasser House Y Logo</title>
+  <desc id="desc">A bold angular orange letter Y with a dynamic orbit.</desc>
+  <defs>
+    <linearGradient id="orange" x1="18" y1="18" x2="132" y2="148" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffb000"/>
+      <stop offset="0.46" stop-color="#ff6334"/>
+      <stop offset="1" stop-color="#ff3d00"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="34" y1="38" x2="130" y2="124" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9d7bff"/>
+      <stop offset="1" stop-color="#5a32ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="9" stdDeviation="8" flood-color="#11120f" flood-opacity=".2"/>
+    </filter>
+  </defs>
+  <path d="M16 45 50 45 80 79 108 28 143 16 96 91 87 143 60 151 67 94Z" fill="url(#orange)" filter="url(#shadow)"/>
+  <path d="M84 80 111 33 133 26 96 91 87 143 76 136Z" fill="#ff7a00" opacity=".72"/>
+  <path d="M30 112c24 15 77 13 108-18" fill="none" stroke="url(#purple)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M124 30 144 12 132 39Z" fill="#ff6334"/>
+  <circle cx="31" cy="112" r="6" fill="#11120f"/>
+</svg>
