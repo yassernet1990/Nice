@@ -18,7 +18,10 @@ window.YH_PART_1A=`
 </div>
 <header>
   <div class="wrap nav">
-    <a class="brand" href="#top">ياسرهاوس®</a>
+    <a class="brand" href="#top" aria-label="ياسر هاوس">
+      <img class="brand-logo" src="y-logo.svg" alt="">
+      <span class="brand-name"><strong>ياسرهاوس®</strong><small>Yasser House</small></span>
+    </a>
     <nav class="navlinks">
       <a href="#about">الاستوديو</a>
       <a href="#work">الأعمال</a>
